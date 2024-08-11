@@ -1,0 +1,9 @@
+.space-y-1
+  - if label.present?
+    = form.label object_name, label, class: "block capitalize text-sm text-gray-500"
+
+  = form.text_field object_name, **options
+
+  - if has_errors?
+    - @form.object.errors[@object_name].each do |error_message|
+      .text-sm.text-red-600{class: "first-letter:uppercase"}= error_message

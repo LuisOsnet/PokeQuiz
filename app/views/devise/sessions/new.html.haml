@@ -1,0 +1,22 @@
+.min-h-screen.flex.items-stretch.text-white
+  .lg:flex.hidden.bg-gray-500.bg-no-repeat.bg-cover.relative.items-center{class: "w-1/2", style: "background-image: url(https://img.goodfon.com/original/1280x800/c/ea/charizard-pokemon-drakon-charizard-pokemon.jpg);"}
+    .absolute.bg-black.opacity-60.inset-0.z-0
+    .w-full.px-24.z-10
+      %h1.text-5xl.font-bold.text-left.tracking-wide= t("devise.sessions.new.main_caption")
+      %p.text-3xl.my-4= t("devise.sessions.new.sub_caption")
+  .bg-black.w-full.flex.items-center.justify-center.text-center.md:px-16.px-0.z-0{class: "lg:w-1/2"}
+    .absolute.lg:hidden.z-10.inset-0.bg-gray-500.bg-no-repeat.bg-cover.items-center{style: "background-image: url(https://img.goodfon.com/original/1280x800/c/ea/charizard-pokemon-drakon-charizard-pokemon.jpg);"}
+      .absolute.bg-black.opacity-60.inset-0.z-0
+    .w-full.py-6.z-20
+      %h1.my-6.font-bold.text-3xl
+        = t("devise.sessions.new.title")
+      = form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "w-full px-4 lg:px-0 mx-auto sm:w-2/3" }) do |form|
+        .pb-2.pt-4
+          = render Forms::TextField::Component.new(form: form, object_name: :email, type: "email", placeholder: t("devise.sessions.new.email"), class: "block w-full p-4 text-lg rounded-sm bg-black")
+        .pb-2.pt-4
+          = render Forms::PasswordField::Component.new(form: form, object_name: :password, type: "password", placeholder: t("devise.sessions.new.password"), class: "password block w-full p-4 text-lg rounded-sm bg-black")
+        .text-right
+          = render "devise/shared/links"
+        .px-4.pb-2.pt-8
+          = render Forms::Submit::Component.new(form: form, label: t("devise.sessions.new.submit_button"), class: "cursor-pointer uppercase block w-full p-4 text-lg text-black rounded-full bg-custom-orange hover:bg-custom-orange-hover focus:outline-none")
+

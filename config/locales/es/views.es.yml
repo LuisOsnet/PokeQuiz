@@ -1,0 +1,29 @@
+es:
+  devise:
+    sign_out: Cerrar sesión
+
+    shared:
+      links:
+        already_have_account_link: ¿Ya tienes una cuenta?
+        sign_in_link: Inicia sesión
+        dont_have_an_account_yet_link: ¿No tienes cuenta?
+        create_new_account_link: Crea la tuya ahora
+
+    sessions:
+      new:
+        title: Inicia sesión
+        main_caption: PokéQuiz
+        sub_caption: Entrenando juntos, siempre más fuertes que ayer.
+        submit_button: Iniciar sesión
+        email: Correo electrónico
+        password: Contraseña
+
+    registrations:
+      new:
+        title: Nueva cuenta
+        main_caption: PokéQuiz
+        sub_caption: Entrenando juntos, siempre más fuertes que ayer.
+        submit_button: Crear cuenta
+        username: Nombre de usuario
+        email: Correo electrónico
+        password: Contraseña
