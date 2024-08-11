@@ -21,7 +21,7 @@ es:
     registrations:
       new:
         title: Nueva cuenta
-        main_caption: PokeQuiz
+        main_caption: PokéQuiz
         sub_caption: Entrenando juntos, siempre más fuertes que ayer.
         submit_button: Crear cuenta
         username: Nombre de usuario
