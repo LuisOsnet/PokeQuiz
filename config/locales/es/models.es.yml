@@ -1,0 +1,26 @@
+es:
+  activerecord:
+    models:
+      user: Usuario
+
+    attributes:
+      user:
+        id: Id
+        username: Nombre de usuario
+        email: Correo electrónico
+        password: Contraseña
+        created_at: Fecha de creación
+
+    errors:
+      models:
+        user:
+          attributes:
+            username:
+              blank: El username no puede estar vacío.
+              too_long: El Nombre de usuario debe tener un máximo de 10 caracteres.
+              too_short: El Nombre de usuario debe tener un mínimo de 6 caracteres.
+              taken: Nombre de usuario ya está en uso
+            email:
+              blank: El correo electrónico no puede estar vacío.
+              invalid: Correo electrónico inválido
+              taken: Correo electrónico ya está en uso

@@ -1,0 +1,29 @@
+en:
+  devise:
+    sign_out: Sign out
+
+    shared:
+      links:
+        already_have_account_link: Already have an account?
+        sign_in_link: Sign in
+        dont_have_an_account_yet_link: Don't have an account?
+        create_new_account_link: Create yours now
+
+    sessions:
+      new:
+        title: Sign in
+        main_caption: PokéQuiz
+        sub_caption: Training together, always stronger than yesterday.
+        submit_button: Sign in
+        email: Email
+        password: Password
+
+    registrations:
+      new:
+        title: New account
+        main_caption: PokéQuiz
+        sub_caption: Training together, always stronger than yesterday.
+        submit_button: Create account
+        username: Username
+        email: Email
+        password: Password

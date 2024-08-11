@@ -1,0 +1,26 @@
+en:
+  activerecord:
+    models:
+      user: User
+
+    attributes:
+      user:
+        id: Id
+        username: Username
+        email: Email
+        password: Password
+        created_at: Creation date
+
+    errors:
+      models:
+        user:
+          attributes:
+            username:
+              blank: Username can't be blank.
+              too_long: Username must be at most 10 characters.
+              too_short: Username must be at least 6 characters.
+              taken: Username is already taken.
+            email:
+              blank: Email can't be blank.
+              invalid: Invalid email address.
+              taken: Email is already taken.

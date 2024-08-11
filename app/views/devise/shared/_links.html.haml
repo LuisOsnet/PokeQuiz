@@ -1,0 +1,9 @@
+- if controller_name != 'sessions'
+  %p
+    = t("devise.shared.links.already_have_account_link")
+    = link_to t("devise.shared.links.sign_in_link"), new_session_path(resource_name), class: 'text-custom-orange hover:underline'
+
+- if devise_mapping.registerable? && controller_name != 'registration'
+  %p
+    = t("devise.shared.links.dont_have_an_account_yet_link")
+    = link_to t("devise.shared.links.create_new_account_link"), new_registration_path(resource_name), class: 'text-custom-orange hover:underline'
