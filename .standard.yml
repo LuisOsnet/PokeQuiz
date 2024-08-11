@@ -1,0 +1,10 @@
+fix: true               # default: false
+parallel: true          # default: false
+format: progress        # default: Standard::Formatter
+default_ignores: true   # default: true
+ruby_version: 3.3.0
+ignore:
+  - 'config/environments/**/*'
+
+plugins:
+  - standard-rails
