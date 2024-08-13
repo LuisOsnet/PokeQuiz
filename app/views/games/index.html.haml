@@ -1,0 +1,6 @@
+%main.flex.min-h-screen.w-full.items-center.justify-center.bg-gray-800
+  = form_with(model: @game, url: games_path, method: :post) do |form|
+    .text-center.flex.flex-col.items-center
+      %img{alt: "pokemon", src: "https://i.gifer.com/origin/a8/a87541948ce7297723eb5568b7ac83e5_w200.gif"}
+      %h1.text-white.text-2xl.font-semibold.m-4= t("game.index.caption")
+      = render Forms::Submit::Component.new(form: form, label: t("game.index.start"), class: "group relative h-12 w-48 overflow-hidden rounded-2xl bg-custom-orange text-lg font-bold text-white inline-flex items-center justify-center cursor-pointer hover:bg-custom-orange-hover")

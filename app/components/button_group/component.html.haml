@@ -1,0 +1,18 @@
+%div
+  = render Forms::Submit::Component.new(form: form, label: t("quizzes.index.next_button"), class: "text-center w-full text-white bg-custom-orange p-3 duration-300 rounded-lg cursor-pointer hover:bg-custom-orange-hover")
+
+%div{data: {controller: "modal"}, class: "#{'hidden' unless show_modal?}"}
+  .main-modal.fixed.w-full.h-full.inset-0.z-50.overflow-hidden.flex.justify-center.items-center.animated.fadeIn.faster{style: "background: rgba(0,0,0,.7);"}
+    .border.border-teal-500.shadow-lg.modal-container.bg-white.md:max-w-md.mx-auto.rounded.shadow-lg.z-50.overflow-y-auto{class: "w-11/12"}
+      .modal-content.py-4.text-left.px-6
+        .flex.justify-between.items-center.pb-3
+          %p.text-2xl.font-bold Terminar juego
+          %button{data: {action: "click->modal#close"}, class: "modal-close cursor-pointer focus:outline-none"}
+            %svg.fill-current.text-black{height: "18", viewbox: "0 0 18 18", width: "18", xmlns: "http://www.w3.org/2000/svg"}
+              %path{d: "M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"}
+        .my-5
+          %p ¿Estás seguro de que quieres finalizar el juego?
+          %p Podrás ver tu resultado después de terminar.
+          %p.pt-2 ¿Deseas continuar?
+        .flex.justify-end.pt-2
+          = link_to 'Si, finalizar', game_path(game_id, locale: I18n.locale), class: "focus:outline-none px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300"

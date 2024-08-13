@@ -45,6 +45,7 @@ gem "devise"
 gem "view_component"
 gem "haml-rails", "~> 2.1"
 gem "tailwindcss-rails"
+gem "faraday", "~> 2.10"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

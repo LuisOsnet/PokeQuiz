@@ -4,6 +4,8 @@ class User < ApplicationRecord
     :recoverable,
     :rememberable
 
+  has_many :games, dependent: :destroy
+
   validates :username, presence: true
   validates :email, presence: true
 
