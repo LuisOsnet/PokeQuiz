@@ -5,7 +5,7 @@ class QuizzesController < ApplicationController
     if @question.nil? || @question[:error]
       handle_error(@question&.dig(:error) || "Unknown error occurred")
     end
-  rescue StandardError => e
+  rescue => e
     handle_error(e.message)
   end
 
@@ -27,6 +27,6 @@ class QuizzesController < ApplicationController
   def handle_error(error_message)
     Rails.logger.error("An error occurred in QuizzesController#index: #{error_message}")
 
-    redirect_to '/500' and return
+    redirect_to "/500" and return
   end
 end

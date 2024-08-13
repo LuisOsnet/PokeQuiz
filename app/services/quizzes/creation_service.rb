@@ -20,12 +20,12 @@ module Quizzes
         quiz.points = 1 if user_answer == correct_answer
 
         if quiz.save
-          return true
+          true
         else
           raise ActiveRecord::Rollback
         end
       end
-    rescue StandardError => e
+    rescue => e
       Rails.logger.error("Failed to save quiz: #{e.message}")
       false
     end
