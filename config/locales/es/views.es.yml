@@ -27,3 +27,19 @@ es:
         username: Nombre de usuario
         email: Correo electrónico
         password: Contraseña
+
+  home:
+    main_caption: Todos los Pokemon son valiosos, ¡pruébalo en la batalla!
+    sub_caption: Atrévete a poner a prueba todo lo que sabes sobre Pokémon. Demuestra que eres un verdadero experto y domina cada pregunta que se interponga en tu camino. ¿Tienes lo necesario para sobresalir?
+    start_button: Comenzar ahora
+
+  game:
+    index:
+      start: Iniciar juego
+      start_again: Volver a jugar
+      caption: Demuestra tu experiencia en Pokémon
+
+  quizzes:
+    index:
+      next_button: Siguiente
+      finish_button: Finalizar

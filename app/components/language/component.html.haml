@@ -1,0 +1,6 @@
+- if I18n.locale.to_s == "es" || I18n.locale.to_s.blank?
+  = link_to new_user_session_path(locale: "en"), class: "p-2 rounded-lg text-white fixed right-0 top-0 z-10" do
+    = render Icon::Flag::Gb::Component.new(class: "w-6 h-6 transition duration-75 stroke-1")
+- else
+  = link_to new_user_session_path(locale: "es"), class: "p-2 rounded-lg text-white fixed right-0 top-0 z-10" do
+    = render Icon::Flag::Es::Component.new(class: "w-6 h-6 transition duration-75 stroke-1")

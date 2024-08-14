@@ -1,0 +1,6 @@
+%main.flex.min-h-screen.w-full.items-center.justify-center.bg-gray-800
+  = form_with(model: @game, url: games_path, method: :post) do |form|
+    .text-center.flex.flex-col.items-center
+      %img.w-44{alt: "pokemon", src: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmJqYmVkZTVhanNuc2FuNm8ycTc3Nm00MWNmaXNzZzJwamhzdWY1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/XFpTLiFdCGkz077BjZ/giphy.gif"}
+      %h1.text-white.text-2xl.font-semibold.m-4.pt-4 Obtuviste #{@game.score.to_i} de #{@game.quizzes.count.to_i}
+      = render Forms::Submit::Component.new(form: form, label: t("game.index.start_again"), class: "group relative h-12 w-48 overflow-hidden rounded-2xl bg-custom-orange text-lg font-bold text-white inline-flex items-center justify-center cursor-pointer hover:bg-custom-orange-hover")

@@ -4,9 +4,12 @@ class User < ApplicationRecord
     :recoverable,
     :rememberable
 
+  has_many :games, dependent: :destroy
+
   validates :username, presence: true
   validates :email, presence: true
 
+  validates :username, uniqueness: true
   validates :email, uniqueness: true
 
   validates :email, format: {with: URI::MailTo::EMAIL_REGEXP}
