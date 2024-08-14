@@ -1,7 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/support/factory_bot.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      }
     },
-    "timestamp": 1723590980
+    "timestamp": 1723601012
   }
 }
