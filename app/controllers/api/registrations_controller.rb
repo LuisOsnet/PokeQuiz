@@ -6,7 +6,7 @@ module Api
 
     def create
       build_resource(sign_up_params)
-      render json: { user: user_response_attributes(resource) }, status: :created if resource.save!
+      render json: {user: user_response_attributes(resource)}, status: :created if resource.save!
     rescue => e
       error(:bad_request, e&.message)
     end
