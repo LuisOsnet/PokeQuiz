@@ -4,6 +4,8 @@ https://github.com/user-attachments/assets/62804566-0f14-4fc1-9be5-e452bfd74ae9
 
 **PokeQuiz** es una aplicación web desarrollada con Ruby on Rails 7.1.3.4 y Ruby 3.3.0. El objetivo de la aplicación es proporcionar un juego de preguntas y respuestas temáticas sobre Pokémon, donde los usuarios pueden poner a prueba su conocimiento sobre el mundo Pokémon.
 
+[Demo](https://lo-pokequiz-190a6c36e319.herokuapp.com)
+
 ## Requisitos
 
 Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
