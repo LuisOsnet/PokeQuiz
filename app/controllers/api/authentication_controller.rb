@@ -1,8 +1,9 @@
 module Api
   class AuthenticationController < Devise::SessionsController
-    include ActionController::Flash
     skip_before_action :authenticate_user!
-    respond_to :json
+
+    include ActionController::Flash
+    include ErrorsHandler
 
     private
 

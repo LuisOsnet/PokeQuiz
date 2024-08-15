@@ -3,6 +3,7 @@
 module Api
   class RegistrationsController < Devise::RegistrationsController
     skip_before_action :authenticate_user!
+    include ErrorsHandler
 
     def create
       build_resource(sign_up_params)
