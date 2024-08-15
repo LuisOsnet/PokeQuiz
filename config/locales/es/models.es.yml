@@ -30,3 +30,10 @@ es:
               blank: La contraseña no puede estar vacía.
               too_long: La contraseña debe tener un máximo de 128 caracteres.
               too_short: La contraseña debe tener un mínimo de 6 caracteres.
+
+      response:
+        unauthorized: El servidor no puede proporcionar acceso a la recurso solicitado porque no ha proporcionado las credenciales de acceso válidas o no tiene permiso para acceder.
+        no_content: El servidor procesó correctamente la solicitud, pero no devuelve ningún contenido.
+        unprocessable_entity: La solicitud estaba bien formada, pero no se pudo seguir debido a errores semánticos.
+        not_found: 'El servidor no puede encontrar el recurso solicitado por el navegador y no es posible determinar si esta ausencia es temporal o permanente.'
+        bad_request: El servidor no puede o no procesará la solicitud debido a algo que se percibe como un error del cliente

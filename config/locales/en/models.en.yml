@@ -9,24 +9,31 @@ en:
         username: Username
         email: Email
         password: Password
-        created_at: Creation date
+        created_at: Creation Date
 
     errors:
       models:
         user:
           attributes:
             username:
-              blank: Username can't be blank.
-              too_long: Username must be at most 10 characters.
-              too_short: Username must be at least 6 characters.
+              blank: Username cannot be blank.
+              too_long: Username must be at most 10 characters long.
+              too_short: Username must be at least 6 characters long.
               taken: Username is already taken.
 
             email:
-              blank: Email can't be blank.
+              blank: Email cannot be blank.
               invalid: Invalid email address.
               taken: Email is already taken.
 
             password:
-              blank: The password cannot be empty.
-              too_long: The password must be a maximum of 128 characters.
-              too_short: The password must be at least 6 characters long.
+              blank: Password cannot be blank.
+              too_long: Password must be at most 128 characters long.
+              too_short: Password must be at least 6 characters long.
+
+      response:
+        unauthorized: The server cannot provide access to the requested resource because valid credentials were not provided or you do not have permission to access it.
+        no_content: The server successfully processed the request, but is not returning any content.
+        unprocessable_entity: The request was well-formed, but was unable to be followed due to semantic errors.
+        not_found: The server cannot find the requested resource, and it is unclear whether this absence is temporary or permanent.
+        bad_request: The server cannot or will not process the request due to something perceived as a client error.

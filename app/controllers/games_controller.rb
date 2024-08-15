@@ -1,9 +1,6 @@
 class GamesController < ApplicationController
   before_action :set_game, only: %i[show]
 
-  def index
-  end
-
   def show
     points = @game.quizzes.sum(:points)
     @game.score = points
@@ -15,7 +12,7 @@ class GamesController < ApplicationController
     @game = current_user.games.new
 
     if @game.save
-      redirect_to game_quizzes_path(@game, locale: I18n.locale), notice: I18n.t("games.create.success")
+      redirect_to game_quizzes_path(@game, locale: I18n.locale)
     else
       render :new, alert: "There was an error creating the game."
     end

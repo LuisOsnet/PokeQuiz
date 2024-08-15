@@ -7,7 +7,7 @@ en:
         already_have_account_link: Already have an account?
         sign_in_link: Sign in
         dont_have_an_account_yet_link: Don't have an account?
-        create_new_account_link: Create yours now
+        create_new_account_link: Create one now
 
     sessions:
       new:
@@ -27,3 +27,19 @@ en:
         username: Username
         email: Email
         password: Password
+
+  home:
+    main_caption: All Pokémon are valuable, prove it in battle!
+    sub_caption: Dare to test everything you know about Pokémon. Show that you are a true expert and master every question that comes your way. Do you have what it takes to excel?
+    start_button: Start now
+
+  game:
+    index:
+      start: Start game
+      start_again: Play again
+      caption: Show off your Pokémon expertise
+
+  quizzes:
+    index:
+      next_button: Next
+      finish_button: Finish
