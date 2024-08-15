@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
-  get 'up' => 'rails/health#show', as: :rails_health_check
-  root to: 'home#index', as: :root_with_locale
+  get "up" => "rails/health#show", :as => :rails_health_check
+  root to: "home#index", as: :root_with_locale
 
-  namespace :api, defaults: { format: :json } do
+  namespace :api, defaults: {format: :json} do
     resources :results
 
     devise_scope :user do
-      post '/signup', to: 'registrations#create'
-      post '/signin', to: 'authentication#create'
-      delete '/signout', to: 'authentication#destroy'
+      post "/signup", to: "registrations#create"
+      post "/signin", to: "authentication#create"
+      delete "/signout", to: "authentication#destroy"
     end
   end
 
-  scope '(:locale)', locale: /en|es/ do
-    devise_for :users, controllers: { registrations: 'devise_session/registration' }
+  scope "(:locale)", locale: /en|es/ do
+    devise_for :users, controllers: {registrations: "devise_session/registration"}
 
     resources :home, only: :index
     resources :games, only: [:show, :create] do
@@ -21,5 +21,5 @@ Rails.application.routes.draw do
     end
   end
 
-  get '', to: redirect('/%{locale}', status: 302), defaults: { locale: I18n.default_locale }
+  get "", to: redirect("/%{locale}", status: 302), defaults: {locale: I18n.default_locale}
 end

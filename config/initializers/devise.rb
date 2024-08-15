@@ -314,10 +314,10 @@ Devise.setup do |config|
   config.jwt do |jwt|
     jwt.secret = Rails.application.credentials.devise_jwt_secret_key
     jwt.dispatch_requests = [
-      ['POST', %r{^/api/signin$}]
+      ["POST", %r{^/api/signin$}]
     ]
     jwt.revocation_requests = [
-      ['DELETE', %r{^/api/signout$}]
+      ["DELETE", %r{^/api/signout$}]
     ]
 
     # sets the expiration time of each token generated.
