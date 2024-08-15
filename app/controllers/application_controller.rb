@@ -8,9 +8,19 @@ class ApplicationController < ActionController::Base
     games_path
   end
 
+  def authenticate_user!
+    return unauthenticated unless user_signed_in?
+
+    current_user
+  end
+
   private
 
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+  def unauthenticated
+    error(:unauthorized)
   end
 end
