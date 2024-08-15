@@ -57,3 +57,14 @@ La aplicación utiliza RSpec para pruebas automatizadas. Para ejecutar las prueb
 La aplicación incluye documentación de la API generada con Rswag. Para acceder a la documentación, asegúrate de que el servidor esté en ejecución y visita:
 
     http://localhost:3000/api-docs
+
+### Documentación Técnica
+
+[PokeQuiz Doc.pdf](https://github.com/user-attachments/files/16629272/PokeQuiz.Doc.pdf)
+
+### Documentación de elementos pendientes
+
+[Deuda Técnica.pdf](https://github.com/user-attachments/files/16629464/Deuda.Tecnica.pdf)
+
+
+
