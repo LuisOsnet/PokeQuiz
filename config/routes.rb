@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     devise_for :users, controllers: {registrations: "devise_session/registration"}
 
     resources :home, only: :index
-    resources :games, only: [:show, :create] do
+    resources :games, only: [:index, :show, :create] do
       resources :quizzes, only: [:index, :create]
     end
   end
