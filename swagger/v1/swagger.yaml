@@ -12,7 +12,7 @@ info:
 servers:
   - url: http://localhost:3000
     description: Servidor de desarrollo local
-  - url: https://lo-pokequiz.herokuapp.com
+  - url: https://lo-pokequiz-190a6c36e319.herokuapp.com
     description: Servidor en producción
 
 components:
