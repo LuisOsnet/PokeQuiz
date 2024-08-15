@@ -6,7 +6,7 @@ module Api
 
     def error(http_status_code, resource = nil, message = nil)
       opts = {status: http_status_code}
-      opts[:message] ||= message || I18n.t("activerecord.errors.response.#{http_status_code}")
+      opts[:message] ||= message || I18n.t("activerecord.errors.response.#{http_status_code}", details: resource)
       opts[:errors] ||= resource
 
       render status: http_status_code, json: {

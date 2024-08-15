@@ -37,3 +37,6 @@ en:
         unprocessable_entity: The request was well-formed, but was unable to be followed due to semantic errors.
         not_found: The server cannot find the requested resource, and it is unclear whether this absence is temporary or permanent.
         bad_request: The server cannot or will not process the request due to something perceived as a client error.
+
+      messages:
+        record_invalid: Invalid record
