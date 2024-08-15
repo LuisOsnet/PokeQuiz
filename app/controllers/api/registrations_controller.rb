@@ -8,10 +8,7 @@ module Api
       build_resource(sign_up_params)
       render json: resource, status: :created if resource.save!
     rescue => e
-      error(
-        :bad_request,
-        e&.message
-      )
+      error(:bad_request, e&.message)
     end
 
     def sign_up_params
