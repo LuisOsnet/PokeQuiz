@@ -12,7 +12,7 @@
   .w-48.mt-3.p-4.bg-gray-800.shadow-lg.absolute.right-0.hidden{"data-dropbox-target" => "content"}
     %ul
       %li
-        %a.text-base.font-normal.rounded-lg.cursor-pointer.text-custom-blue-100.hover:text-custom-blue-200.group.transition.duration-75.flex.items-center.py-2{href: "#", target: "_blank"}
+        %a.text-base.font-normal.rounded-lg.cursor-pointer.text-custom-blue-100.hover:text-custom-blue-200.group.transition.duration-75.flex.items-center.py-2
           = render Icon::Logout::Component.new(class: "w-6 h-6 transition duration-75 stroke-1")
           %span.ml-3.text-custom-blue-100.hover:text-custom-blue-200
             = button_to(t("devise.sign_out"), destroy_user_session_path, method: :delete)
