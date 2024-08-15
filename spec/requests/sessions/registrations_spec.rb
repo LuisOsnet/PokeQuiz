@@ -28,8 +28,12 @@ RSpec.describe "Api::Registrations", type: :request do
 
         expect(response).to have_http_status(:created)
         expect(JSON.parse(response.body)).to include(
-          "username" => valid_params[:user][:username],
-          "email" => valid_params[:user][:email]
+          {
+            "user" => {
+              "username" => valid_params[:user][:username],
+              "email" => valid_params[:user][:email]
+            }
+          }
         )
       end
     end

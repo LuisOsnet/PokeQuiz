@@ -42,6 +42,7 @@ gem "tailwindcss-rails"
 gem "faraday", "~> 2.10"
 gem "devise-jwt"
 gem "rack-cors", require: "rack/cors"
+gem "rswag"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-08-14T21:56:11-06:00">2024-08-14T21:56:11-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-08-14T22:45:20-06:00">2024-08-14T22:45:20-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  95.99%
+  96.01%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>324</b> relevant lines,
-    <span class="green"><b>311</b> lines covered</span> and
+    <b>326</b> relevant lines,
+    <span class="green"><b>313</b> lines covered</span> and
     <span class="red"><b>13</b> lines missed. </span>
     (<span class="green">
-  95.99%
+  96.01%
 </span>
 )
   </div>
@@ -84,11 +84,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0f3cd267c09b288968d452362da9452f27f633f3" class="src_link" title="app/controllers/api/registrations_controller.rb">app/controllers/api/registrations_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">22</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.33</td>
+            <td class="cell--number">1.27</td>
             
           </tr>
         
@@ -216,7 +216,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#8f44cf81a28c1466576cf00a6fdfa29980bf41b3" class="src_link" title="spec/requests/sessions/registrations_spec.rb">spec/requests/sessions/registrations_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">58</td>
+            <td class="cell--number">62</td>
             <td class="cell--number">19</td>
             <td class="cell--number">19</td>
             <td class="cell--number">0</td>
@@ -649,8 +649,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -756,7 +756,7 @@
 
             
 
-            <code class="ruby">      render json: resource, status: :created if resource.save!</code>
+            <code class="ruby">      render json: { user: user_response_attributes(resource) }, status: :created if resource.save!</code>
           </li>
         </div>
       
@@ -888,12 +888,56 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def user_response_attributes(user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      user.as_json(only: [:username, :email])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -5429,7 +5473,7 @@
 
             
 
-            <code class="ruby">          &quot;username&quot; =&gt; valid_params[:user][:username],</code>
+            <code class="ruby">          {</code>
           </li>
         </div>
       
@@ -5440,7 +5484,7 @@
 
             
 
-            <code class="ruby">          &quot;email&quot; =&gt; valid_params[:user][:email]</code>
+            <code class="ruby">            &quot;user&quot; =&gt; {</code>
           </li>
         </div>
       
@@ -5451,7 +5495,7 @@
 
             
 
-            <code class="ruby">        )</code>
+            <code class="ruby">              &quot;username&quot; =&gt; valid_params[:user][:username],</code>
           </li>
         </div>
       
@@ -5462,7 +5506,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">              &quot;email&quot; =&gt; valid_params[:user][:email]</code>
           </li>
         </div>
       
@@ -5473,7 +5517,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">            }</code>
           </li>
         </div>
       
@@ -5484,199 +5528,12 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    context &quot;when registration fails&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      before do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        allow_any_instance_of(User).to receive(:save!).and_raise(StandardError, &quot;Registration failed&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      it &quot;returns a bad request status with error message&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        post api_signup_path, params: invalid_params, as: :json</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(response).to have_http_status(:bad_request)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(JSON.parse(response.body)).to include(</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
-            
-
-            <code class="ruby">          &quot;error&quot; =&gt; {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="48">
-            
-            
-
-            
-
-            <code class="ruby">            &quot;code&quot; =&gt; 400,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
-            
-
-            <code class="ruby">            &quot;status&quot; =&gt; &quot;bad_request&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
-            
-
-            <code class="ruby">            &quot;resource&quot; =&gt; &quot;registrations&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="51">
-            
-            
-
-            
-
-            <code class="ruby">            &quot;message&quot; =&gt; &quot;El servidor no puede o no procesará la solicitud debido a algo que se percibe como un error del cliente&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
-            
-
-            <code class="ruby">            &quot;details&quot; =&gt; &quot;Registration failed&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
-            
-
             <code class="ruby">          }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="never" data-hits="" data-linenumber="37">
             
             
 
@@ -5687,7 +5544,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
@@ -5698,7 +5555,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
@@ -5709,7 +5566,238 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    context &quot;when registration fails&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      before do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        allow_any_instance_of(User).to receive(:save!).and_raise(StandardError, &quot;Registration failed&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &quot;returns a bad request status with error message&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        post api_signup_path, params: invalid_params, as: :json</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response).to have_http_status(:bad_request)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(JSON.parse(response.body)).to include(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">          &quot;error&quot; =&gt; {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">            &quot;code&quot; =&gt; 400,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">            &quot;status&quot; =&gt; &quot;bad_request&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">            &quot;resource&quot; =&gt; &quot;registrations&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">            &quot;message&quot; =&gt; &quot;El servidor no puede o no procesará la solicitud debido a algo que se percibe como un error del cliente&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">            &quot;details&quot; =&gt; &quot;Registration failed&quot;</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">          }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">        )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
             
             
 
@@ -5720,7 +5808,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="62">
             
             
 
