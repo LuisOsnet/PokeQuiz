@@ -8,6 +8,68 @@
           null
         ]
       },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/helpers/api/registrations_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/helpers/api/results_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/models/game_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/app/models/game.rb": {
         "lines": [
           1,
@@ -113,9 +175,11 @@
           2,
           2,
           2,
+          2,
           null,
           null,
           1,
+          2,
           2,
           2,
           null,
@@ -138,6 +202,39 @@
           null
         ]
       },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/requests/api/authentication_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/requests/api/registrations_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/requests/api/results_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/Osnaya/Documents/Projects/Github/Personal/PokeQuiz/spec/services/quizzes/creation_service_spec.rb": {
         "lines": [
           1,
@@ -149,7 +246,6 @@
           7,
           null,
           7,
-          null,
           null,
           1,
           1,
@@ -383,7 +479,7 @@
           1,
           5,
           5,
-          61,
+          60,
           null,
           4,
           3,
@@ -436,6 +532,6 @@
         ]
       }
     },
-    "timestamp": 1723612693
+    "timestamp": 1723688211
   }
 }

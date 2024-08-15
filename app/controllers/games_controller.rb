@@ -1,9 +1,6 @@
 class GamesController < ApplicationController
   before_action :set_game, only: %i[show]
 
-  def index
-  end
-
   def show
     points = @game.quizzes.sum(:points)
     @game.score = points

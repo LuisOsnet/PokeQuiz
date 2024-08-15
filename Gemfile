@@ -40,6 +40,8 @@ gem "view_component"
 gem "haml-rails", "~> 2.1"
 gem "tailwindcss-rails"
 gem "faraday", "~> 2.10"
+gem "devise-jwt"
+gem "rack-cors", require: "rack/cors"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
