@@ -43,3 +43,10 @@ es:
     index:
       next_button: Siguiente
       finish_button: Finalizar
+
+  modal:
+    title: Finalizar el juego
+    content: "¿Estás seguro de que quieres finalizar el juego?\nPodrás ver tu resultado después de terminar."
+    button:
+      continue: Si, continuar
+      finish: No, finalizar
